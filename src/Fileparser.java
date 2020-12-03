@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Fileparser {
-    public String[] toStringArray (String path) throws IOException {
+    public static String[] toStringArray (String path) throws IOException {
         File file = new File(path);
         Scanner scanner = new Scanner(file);
         List<String> input = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Fileparser {
         return input.toArray(new String[0]);
     }
 
-    public Integer[] toIntArray (String path) throws IOException {
+    public static Integer[] toIntArray (String path) throws IOException {
         File file = new File(path);
         Scanner scanner = new Scanner(file);
         List<Integer> input = new ArrayList<>();
