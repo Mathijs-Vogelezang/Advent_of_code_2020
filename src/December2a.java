@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class December2a {
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\mathi\\IdeaProjects\\Advent of code\\src\\December2 puzzle input.txt");
+        File file = new File("src/December2 puzzle input.txt");
         Scanner scanner = new Scanner(file);
         List<String> input = new ArrayList<String>();
         while (scanner.hasNextLine()) {
