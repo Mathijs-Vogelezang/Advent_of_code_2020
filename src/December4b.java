@@ -3,7 +3,7 @@ import java.util.*;
 
 public class December4b {
     public static void main(String[] args) throws IOException {
-        String[] passes = December4a.getPasses("C:\\Users\\mathi\\IdeaProjects\\Advent of code\\src\\December4 puzzle input.txt");
+        String[] passes = December4a.getPasses("src/December4 puzzle input.txt");
         int validPasses = 0;
 
         for (String pass:passes) {

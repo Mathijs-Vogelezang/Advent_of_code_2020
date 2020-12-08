@@ -5,7 +5,7 @@ public class December4a {
     private static String[] requiredContents = new String[]{"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"};
 
     public static void main(String[] args) throws IOException {
-        String[] passes = getPasses("C:\\Users\\mathi\\IdeaProjects\\Advent of code\\src\\December4 puzzle input.txt");
+        String[] passes = getPasses("src/December4 puzzle input.txt");
 
         int validPasses = 0;
         for (String pass:passes) {

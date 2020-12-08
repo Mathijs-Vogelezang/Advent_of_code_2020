@@ -5,7 +5,7 @@ public class December3b {
 
     static {
         try {
-            input = Fileparser.toStringArray("C:\\Users\\mathi\\IdeaProjects\\Advent of code\\src\\December3 puzzle input.txt");
+            input = Fileparser.toStringArray("src/December3 puzzle input.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
