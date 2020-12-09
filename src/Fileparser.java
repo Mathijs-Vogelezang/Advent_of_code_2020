@@ -15,13 +15,13 @@ public class Fileparser {
         return input.toArray(new String[0]);
     }
 
-    public static Integer[] toIntArray (String path) throws IOException {
+    public static int[] toIntArray (String path) throws IOException {
         File file = new File(path);
         Scanner scanner = new Scanner(file);
         List<Integer> input = new ArrayList<>();
         while (scanner.hasNextLine()) {
             input.add(Integer.parseInt(scanner.nextLine()));
         }
-        return input.toArray(new Integer[0]);
+        return input.stream().mapToInt(i->i).toArray();
     }
 }
