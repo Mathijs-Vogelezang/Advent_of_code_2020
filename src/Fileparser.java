@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,5 +24,15 @@ public class Fileparser {
             input.add(Integer.parseInt(scanner.nextLine()));
         }
         return input.stream().mapToInt(i->i).toArray();
+    }
+
+    public static long[] toLongArray (String path) throws FileNotFoundException {
+        File file = new File(path);
+        Scanner scanner = new Scanner(file);
+        List<Long> input = new ArrayList<>();
+        while (scanner.hasNextLine()) {
+            input.add(Long.parseLong(scanner.nextLine()));
+        }
+        return input.stream().mapToLong(i->i).toArray();
     }
 }
